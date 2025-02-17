@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width">
+        <title>My New Form</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+
+            .leftimg{
+                position: absolute;
+            top: 30px;
+            left: 10px;
+            width: 100px; 
+            height: auto;
+            }
+
+            .rightimg{
+                position: absolute;
+            top: 30px;
+            right: 10px;
+            width: 100px; 
+            height: auto;
+            }
+
+            input,button,select{
+                width: 250px;
+            }
+            
+
+            h3,p{
+                text-align: center;
+                font-style: italic;
+            }
+
+        body {
+            margin: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+            @media (max-width: 600px) {
+          body {
+            background-color: lightgreen;
+          }
+        }
+
+            button:hover,input:hover{
+                    outline: 4px solid red;
+            }
+
+
+
+            tr{
+                background-color: white;
+            }
+            th{
+                background-color: aquamarine;
+            }
+            table{
+                border-collapse: collapse;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="navig">
+            <img src="C:\Users\vijai\Desktop\Angular course\left.png" alt="img unavailable" class="leftimg">
+            <h1>Nehru Arts and Science College</h1>
+            <img src="C:\Users\vijai\Desktop\Angular course\right.jpg" alt="img unavailable" class="rightimg">
+        </div>
+        <h3>Student Register form</h3>
+        <p style="color: red; font-family: 'Courier New', Courier, monospace;"> this is student register form</p>
+        <div>
+            <form class="form1" >
+                <!-- <label for="name">Name: </label> -->
+                <input type="text" id="name" placeholder="Name"> <br><br>
+                <!-- <label for="age">Age: </label> -->
+                <input type="date" id="age" placeholder="Age"> <br><br>
+                <!-- <label for="dept">Department: </label> -->
+                <select id="dept" aria-placeholder="select your dept">
+                    <option selected disabled> select your dept </option>
+                    <option> CS </option>
+                    <option> ITS </option>
+                    <option> DS </option>
+                </select><br><br>
+                <button id="submit" onclick="submitData(event)"">Submit Now</button>
+                <!-- <ol>
+                    <li> option1</li>
+                    <li> option2</li>
+                    <li> option3</li>
+                </ol>
+             
+
+
+                <table border="1">
+                    <thead style="background-color: aquamarine;" >
+                        <th>Sno</th>
+                        <th>Name</th>
+                        <th>Marks</th>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Arun</td>
+                            <td>100</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Bala</td>
+                            <td>90</td>
+                        </tr>
+                    </tbody>
+                    
+
+                </table>
+
+                <a href="https://www.google.co.in/">Go to Google.com</a>
+                 -->
+            </form>
+           <p id="output"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+
+
